@@ -43,6 +43,26 @@ export class Tab1Page {
       generos: ['Comédia', 'Família', 'Animação'],
       pagina: '/tom',
     },
+    {
+      nome: 'Soul (2020)',
+      lancamento: '25/12/2020',
+      duracao: '1h 40m',
+      classificacao: 82,
+      cartaz:
+        'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bzDAfXoqNAvWUe7uss2NE3BmRqy.jpg',
+      generos: ['Família', 'Animação', 'Comédia', 'Drama', 'Música', 'Fantasia'],
+      pagina: '',
+    },
+    {
+      nome: 'Maggie Simpson em O Despertar com Força da Soneca (2021)',
+      lancamento: '04/05/2021',
+      duracao: '3m',
+      classificacao: 68,
+      cartaz:
+        'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/AomupwyaNdyry1sMHsRO5NmOUyx.jpg',
+      generos: ['Família', 'Animação', 'Comédia', 'Ficção científica'],
+      pagina: '',
+    }
   ];
 
   constructor(
