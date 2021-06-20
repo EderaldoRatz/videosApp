@@ -8,20 +8,30 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
-import { registerLocaleData} from '@angular/common';
+import { CommonModule, registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 registerLocaleData(localePt);
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    HttpClientModule,
+  ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    DadosService, {provide: LOCALE_ID, useValue: 'pt-BR'},
+    DadosService,
+    { provide: LOCALE_ID, useValue: 'pt-BR' },
   ],
   bootstrap: [AppComponent],
 })
